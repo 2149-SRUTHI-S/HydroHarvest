@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HydroHarvest</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link rel="icon" href="img/logo.png" type="image/png">
+ 
+    <link href="img/favicon.ico" rel="icon">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+ 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+ 
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+   
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0" id="home">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <!-- <img src="img/logo.png" alt="Logo">
+                    <h1 class="m-0">HydroHarvest</h1> -->
+                    <div style="display: flex; align-items: center;">
+                        <img src="img/logo.png" alt="Logo" style="height: 60px; margin-right: 10px;">
+                        <h1 class="m-0" style="font-size: 40px;">HydroHarvest</h1>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="#home" class="nav-item nav-link active">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#pricing" class="nav-item nav-link">Calculate</a>
+                        <a href="#Working" class="nav-item nav-link">Working</a>
+                        <a href="#feature" class="nav-item nav-link">Feature</a>
+
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <a href="#pricing" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block" style="border: 1.7px solid #ffffff;">Calculate Now</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl bg-primary hero-header">
+                <div class="container px-lg-5">
+                    <div class="row g-5">
+                        <div class="col-lg-8 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated slideInDown">Discover Your Daily Water Footprint: Calculate, Conserve, and Help Our Planet</h1>
+                            <p class="text-white pb-3 animated slideInDown">A water footprint measures the total volume of freshwater used directly and indirectly by an individual, business, or product throughout its lifecycle, reflecting environmental impact</p>
+                            <a href="#feature" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft" style="border: 1.7px solid #ffffff;">Read More</a>
+                            <a href="#contact" class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight" style="border: 1.7px solid #ffffff;">Contact Us</a>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="owl-carousel screenshot-carousel">
+                                <img class="img-fluid" src="img/screenshot-1.jpg" alt="">
+                                <img class="img-fluid" src="img/screenshot-2.jpg" alt="">
+                                <img class="img-fluid" src="img/screenshot-3.jpg" alt="">
+                                <img class="img-fluid" src="img/screenshot-4.jpg" alt="">
+                                <img class="img-fluid" src="img/screenshot-5.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5" id="about">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium">About us</h5>
+                        <h1 class="mb-4">Accurate Calculation with Vision API</h1>
+                        <p class="mb-4">Web app calculates water footprint of everyday objects. Offers multilingual text input interpreted by AI or identifies objects from images using Google Cloud Vision API.</p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="d-flex">
+                                    <i class="fa fa-comments fa-2x text-secondary-gradient flex-shrink-0 mt-1"></i>
+                                    <!-- <i class="fa fa-cogs fa-2x text-primary-gradient flex-shrink-0 mt-1"></i> -->
+                                    <div class="ms-3">
+                                        <h2 class="mb-0" data-toggle="counter-up">1200</h2>
+                                        <p class="text-primary-gradient mb-0">Total Visits</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <div class="d-flex">
+                                    <i class="fa fa-comments fa-2x text-secondary-gradient flex-shrink-0 mt-1"></i>
+                                    <div class="ms-3">
+                                        <h2 class="mb-0" data-toggle="counter-up">1200</h2>
+                                        <p class="text-secondary-gradient mb-0">Total Visits</p>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <a href="#feature" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">Read More</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/about.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+ 
+
+        <!-- Process Start -->
+        <div class="container-xxl py-5" id="Working">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">How It Works</h5>
+                    <h1 class="mb-5">3 Easy Steps</h1>
+                </div>
+                <div class="row gy-5 gx-4 justify-content-center">
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-cog fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Input the data</h5>
+                            <p class="mb-0">Users provide object descriptions or images.
+                                Multilingual text input or image recognition is used.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-address-card fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Calculation</h5>
+                            <p class="mb-0">AI interprets the input and matches it with water footprint data.
+                                Water footprint is calculated for the specified object.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-check fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Presentation</h5>
+                            <p class="mb-0">Results are displayed to users with proper illustration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Process Start -->
+
+
+        <!-- Way 1 Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.1s" src="img/about.png">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <h5 class="text-primary-gradient fw-medium">Way 1</h5>
+                        <h1 class="mb-4">Instant Water Footprint Calculation with Image Upload and Vision API</h1>
+                        <p class="mb-4">Images inputted, Vision API identifies objects, AI calculates water footprint; eco-conscious choices made easy through visual recognition</p>
+                        <div class="row g-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <a href="" class="d-flex bg-primary-gradient rounded py-3 px-4">
+                                    <i class=" "></i>
+                                    <div class="ms-3">
+                                        <!-- <p class="text-white mb-0">Upload </p> -->
+                                        <h5 class="text-white mb-0">Upload Photo</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <a href="" class="d-flex bg-secondary-gradient rounded py-3 px-4">
+                                    <i class=""></i>
+                                    <div class="ms-3">
+                                        <!-- <p class="text-white mb-0">Available On</p> -->
+                                        <h5 class="text-white mb-0">Scan Through Camera</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Way 1 End -->
+
+
+        <!-- Way 2 Start -->
+        <div class="container-xxl py-5" id="pricing">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Way 2</h5>
+                    <h1 class="mb-5">Choose Your Language</h1>
+                </div>
+                <div class="tab-class text-center pricing wow fadeInUp" data-wow-delay="0.1s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center bg-primary-gradient rounded-pill mb-5">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-bs-toggle="pill" href="#tab-1">English</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="pill" href="#tab-2">हिंदी</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content text-start">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Steps to Follow</h4>
+                                            <span>Required Things to do</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                   
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>Have a clear image</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Text Should be Visible</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Avoid Blur Images</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                          
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Get Started</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded border">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Upload Photo</h4>
+                                            <span>Required Things to do</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                             
+                                            <div class="d-flex justify-content-between mb-3"><span>Should have a Photo in Folder</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Format Should be JPEG/PNG</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>A clear Photo is advised</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="http://127.0.0.1:5000/" class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4" target="_blank">Upload Here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Scan through Camera</h4>
+                                            <span>Required Things to Do</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                             
+                                            <div class="d-flex justify-content-between mb-3"><span>Only Work in Mobile Phones</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Take a clear Image </span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Avoid Blur Images can be readable </span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Scan Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">फॉलो करने के चरण</h4>
+                                            <span>करने के लिए आवश्यक चीजें</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                          
+                                            <div class="d-flex justify-content-between mb-3"><span>एक स्पष्ट छवि होनी चाहिए</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>पाठ दिखाई देना चाहिए</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>धुंधली छवियों से बचें</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">शुरू करें</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded border">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">फ़ोटो अपलोड करें</h4>
+                                            <span>करने के लिए आवश्यक चीजें</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            
+                                            <div class="d-flex justify-content-between mb-3"><span>फ़ोल्डर में फ़ोटो होनी चाहिए"</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>स्वरूप JPEG/PNG होना चाहिए</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>स्पष्ट फ़ोटो सिफारिश की जाती है</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">यहाँ अपलोड करें</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">कैमरा के माध्यम से स्कैन करें</h4>
+                                            <span>करने के लिए आवश्यक चीजें</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                             
+                                            <div class="d-flex justify-content-between mb-3"><span>केवल मोबाइल फोन में काम करता है</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>स्पष्ट छवि लें</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>धुंधली छवियों से बचें, पठनीय होनी चाहिए</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">अब स्कैन करें</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Way 2 End -->
+        
+        <!-- Way 3 Start -->
+        <div class="container-xxl py-5" id="pricing">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Way 3</h5>
+                    <h1 class="mb-5">Multilingual Filling: Go With Your Language</h1>
+                </div>
+                <div class="tab-class text-center pricing wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="tab-content text-start">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">For Single Object</h4>
+                                            <span>Required Things to do</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                   
+                                            </h1>
+                                          <div class="d-flex justify-content-between mb-3"><span>There will be two fields</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>First Select Your Language</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Enter Inputs and Click on Calculate </span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="https://form.jotform.com/pushprajdubey20/calculate-water-footprint-aquameter" target="_blank" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Calculate Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded border">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">For Daily Water Usage</h4>
+                                            <span>Required Things to do</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                             
+                                              <div class="d-flex justify-content-between mb-3"><span>There will be 13 to 14 Questions</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Try to attempt every question</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Enter Inputs and Click on Calculate </span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                          
+                                            <a href="http://127.0.0.1:5000/" target="_blank" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4" >Calculate Here</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded border">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Water Usage Statistics</h4>
+                                            <span>Here's what you can do with this tool</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                             
+                                              <div class="d-flex justify-content-between mb-3"><span>Overview of Water Consumption</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Location-Based Insights</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Color Coded labels</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                          
+                                            <a href="index.html" target="_parent" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">See Here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                 
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Way 3 End -->
+         
+        
+
+               <!-- Screenshot Start -->
+               <div class="container-xxl py-5" id="working">
+                <div class="container py-5 px-lg-5">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                            <h5 class="text-primary-gradient fw-medium">Inputs</h5>
+                            <h1 class="mb-4">User Friendly interface And Very Easy To Use Web App</h1>
+                            <p class="mb-4">Web app calculates water footprint of everyday objects. Offers multilingual text input interpreted by AI or identifies objects from images using Google Cloud Vision API.</p>
+                            <p><i class="fa fa-check text-primary-gradient me-3"></i>Water-Footprint Calculation</p>
+                            <p><i class="fa fa-check text-primary-gradient me-3"></i>Community Features</p>
+                            <p class="mb-4"><i class="fa fa-check text-primary-gradient me-3"></i>Feedback and Reporting</p>
+                            <a href="#feature" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">Read More</a>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="owl-carousel screenshot-carousel">
+                                <img class="img-fluid" src="img/screenshot-1.jpg" alt="">
+                                <img class="img-fluid" src="img/screenshot-2.jpg" alt="">
+                                <img class="img-fluid" src="img/screenshot-3.jpg" alt="">
+                                <img class="img-fluid" src="img/screenshot-4.jpg" alt="">
+                                <img class="img-fluid" src="img/screenshot-5.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Screenshot End -->
+        
+        <!-- Features Start -->
+        <div class="container-xxl py-5" id="feature">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">App Features</h5>
+                    <h1 class="mb-5">Awesome Features</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-eye text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Water-Footprint Calculation</h5>
+                            <p class="m-0">Computes the water footprint of the specified object based on available data.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-layer-group text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Community Features</h5>
+                            <p class="m-0">Allows users to connect with others interested in sustainable living, share tips, and discuss water conservation strategies.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-edit text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Feedback and Reporting</h5>
+                            <p class="m-0"> Enables users to report inaccuracies or suggest improvements in the data.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-shield-alt text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">AI Model Integration</h5>
+                            <p class="m-0">Utilizes an AI model to interpret and match text input with water footprint data.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-cloud text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Image Recognition</h5>
+                            <p class="m-0">Allows users to upload images of objects, which are then identified using the Google Cloud Vision API for accurate data retrieval.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-mobile-alt text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Fully Responsive</h5>
+                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
+         
+
+
+        <!-- Contact Start -->
+        <div class="container-xxl py-5" id="contact">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeIn Up" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Contact Us</h5>
+                    <h1 class="mb-5">Get In Touch!</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="wow fadeInUp" data-wow-delay="0.3s">
+                            <p class="text-center mb-4">This is our contact form for your queries and questions. Please make an effort to provide the following information so that we can assist you effectively  .</p>
+                            <form action="https://formspree.io/f/mleylwlr"
+                            method="POST" >
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                                            <label for="subject">Subject</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px" required></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button class="btn btn-primary-gradient rounded-pill py-3 px-5" type="submit">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Address</h4>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>Chennai, TamilNadu</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+91 9434530225</p>
+                        <p><i class="fa fa-envelope me-3"></i>hydroharvest@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Quick Link</h4>
+                        <a class="btn btn-link" href="#about">About Us</a>
+                        <a class="btn btn-link" href="#contact">Contact Us</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                        
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Popular Link</h4>
+                        <a class="btn btn-link" href="#about">About Us</a>
+                        <a class="btn btn-link" href="#contact">Contact Us</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                        
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Stay Informed with Our Newsletter</h4>
+                        <p>Subscribe to our newsletter and never miss out on the latest updates, exclusive content, industry insights, and special offers. Stay connected with us and join our community today!</p>
+                        <div class="position-relative w-100 mt-3">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary-gradient fs-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">HydroHarvest</a>, All Right Reserved. 
+							
+							 
+							Designed By <a class="border-bottom" href="">Sruthi</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FAQs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up text-white"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
